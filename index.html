@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html class="theme-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="jquery-script.js" defer></script>
+    <script src="vanilla-js-script.js" defer></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container" id="medical-form">
+        <section class="hero">
+          <div class="hero-body">
+            <p class="title">General Information</p>
+          </div>
+        </section>
+        <h1 class="title">Patient Details</h1>
+        <form id="medical-intake-form">
+            <section id="background-info">
+                <div class="grid is-flex-direction-row">
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">First Name</label>
+                        <div class="control">
+                          <input class="input" id="firstName" type="text" placeholder="John"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">Last Name</label>
+                        <div class="control">
+                          <input class="input" id="lastName" type="text" placeholder="Smith" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell" id="suffix">
+                      <div class="field">
+                        <label class="label">Suffix</label>
+                        <div class="control">
+                          <div class="select">
+                            <select>
+                              <option>Mr.</option>
+                              <option>Mrs.</option>
+                              <option>Ms.</option>
+                              <option>Dr.</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">Preferred Name</label>
+                        <input class="input" type="text" placeholder="Johnny"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">Address</label>
+                        <input class="input" type="text" placeholder="123 A Street" />
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">Apt. #</label>
+                        <input class="input" type="text" placeholder="123"/>
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">City</label>
+                        <input class="input" type="text" placeholder="Jamestown" />
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">State</label>
+                        <div class="control">
+                            <div class="select">
+                                <select>
+                                    <option>Alabama - AL</option>
+                                    <option>Alaska - AK</option>
+                                    <option>Arizona - AZ</option>
+                                    <option>Arkansas - AR</option>
+                                    <option>California - CA</option>
+                                    <option>Colorado - CO</option>
+                                    <option>Connecticut - CT</option>
+                                    <option>Delaware - DE</option>
+                                    <option>Florida - FL</option>
+                                    <option>Georgia - GA</option>
+                                    <option>Hawaii - HI</option>
+                                    <option>Idaho - ID</option>
+                                    <option>Illinois - IL</option>
+                                    <option>Indiana - IN</option>
+                                    <option>Iowa - IA</option>
+                                    <option>Kansas - KS</option>
+                                    <option>Kentucky - KY</option>
+                                    <option>Louisiana - LA</option>
+                                    <option>
+                                        Maine - ME
+                                    </option>
+                                    <option>Maryland - MD</option>
+                                    <option>Massachusetts - MA</option>
+                                    <option>Michigan - MI</option>
+                                    <option>Minnesota - MN</option>
+                                    <option>Mississippi - MS</option>
+                                    <option>Missouri - MO</option>
+                                    <option>Montana - MT</option>
+                                    <option>Nebraska - NE</option>
+                                    <option>Nevada - NV</option>
+                                    <option>New Hampshire - NH</option>
+                                    <option>New Jersey - NJ</option>
+                                    <option>New Mexico - NM</option>
+                                    <option>New York - NY</option>
+                                    <option>North Carolina - NC</option>
+                                    <option>North Dakota - ND</option>
+                                    <option>Ohio - OH</option>
+                                    <option>Oklahoma - OK</option>
+                                    <option>Oregon - OR</option>
+                                    <option>Pennsylvania - PA</option>
+                                    <option>Rhode Island - RI</option>
+                                    <option>South Carolina - SC</option>
+                                    <option>South Dakota - SD</option>
+                                    <option>Tennessee - TN</option>
+                                    <option>Texas - TX</option>
+                                    <option>Utah - UT</option>
+                                    <option>Vermont - VT</option>
+                                    <option>Virginia - VA</option>
+                                    <option>Washington St. - WA</option>
+                                    <option>West Virginia - WV</option>
+                                    <option>Wisconsin - WI</option>
+                                    <option>Wyoming - WI</option>
+                                </select>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">Zip Code</label>
+                        <input class="input" type="text" placeholder="55555" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid">
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">Phone #</label>
+                        <input class="input" type="mask" placeholder="(555)555-5555" />
+                      </div>
+                    </div>
+                    <div class="cell">
+                      <div class="field">
+                        <label class="label">Social Security #</label>
+                        <input class="input" type="integer" placeholder="555-55-5555"/>
+                      </div>
+                    </div>
+                    <div class="cell" id="gender">
+                      <div class="field">
+                        <label class="label">Gender</label>
+                        <div class="control">
+                          <div class="select">
+                            <select>
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="grid">
+                      <div class="cell">
+                        <div class="field">
+                          <label class="label">Birth Date</label>
+                          <input class="input" type="date" />
+                        </div>
+                      </div>
+                      <div class="cell" id="martial-status">
+                        <div class="field">
+                          <label class="label">Martial Status</label>
+                          <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="mStatus" value="married"/> Married
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="mStatus" value="single"/> Single
+                            </label>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="cell">
+                            <div class="field">
+                              <label class="label">Email Address</label>
+                              <input class="input" type="email" placeholder="jsmith@jamestownsettlement.org" />
+                            </div>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="grid">
+                        <div class="cell">
+                            <div class="field">
+                                <label class="label">Please explain the reason(s) for your visit today:</label>
+                                <input class="textarea" cols="40" rows="20" placeholder="cough, injury, feeling unwell, etc.">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="grid">                        
+                        <div class="cell">
+                            <div class="field">
+                                <label class="label">Do you have a primary care provider? <label class="radio">
+                                    <input type="radio" name="pCare" value="yes" id="pCareYes">Yes</label><label class="radio" ><input type="radio"name="pCare" value="no" id="pCareNo">No</label>
+                                    <br>
+                                    <div class="current-provider-info">
+                                      <div class="grid">
+                                        <div class="cell">
+                                          <label class="label">Provider Name:</label>
+                                          <input class="input" type="text" placeholder="provider name">
+                                          <label class="label">Address:</label>
+                                          <input class="input" type="text" placeholder="address">
+                                          <label class="label">City:</label>
+                                          <input class="input" type="text" placeholder="city">
+                                          <label class="label">State:</label>
+                                          <div class="cell">
+                                            <div class="field">
+                                              <div class="control">
+                                                  <div class="select" id="provider-state">
+                                                      <select>
+                                                          <option>Alabama - AL</option>
+                                                          <option>Alaska - AK</option>
+                                                          <option>Arizona - AZ</option>
+                                                          <option>Arkansas - AR</option>
+                                                          <option>California - CA</option>
+                                                          <option>Colorado - CO</option>
+                                                          <option>Connecticut - CT</option>
+                                                          <option>Delaware - DE</option>
+                                                          <option>Florida - FL</option>
+                                                          <option>Georgia - GA</option>
+                                                          <option>Hawaii - HI</option>
+                                                          <option>Idaho - ID</option>
+                                                          <option>Illinois - IL</option>
+                                                          <option>Indiana - IN</option>
+                                                          <option>Iowa - IA</option>
+                                                          <option>Kansas - KS</option>
+                                                          <option>Kentucky - KY</option>
+                                                          <option>Louisiana - LA</option>
+                                                          <option>
+                                                              Maine - ME
+                                                          </option>
+                                                          <option>Maryland - MD</option>
+                                                          <option>Massachusetts - MA</option>
+                                                          <option>Michigan - MI</option>
+                                                          <option>Minnesota - MN</option>
+                                                          <option>Mississippi - MS</option>
+                                                          <option>Missouri - MO</option>
+                                                          <option>Montana - MT</option>
+                                                          <option>Nebraska - NE</option>
+                                                          <option>Nevada - NV</option>
+                                                          <option>New Hampshire - NH</option>
+                                                          <option>New Jersey - NJ</option>
+                                                          <option>New Mexico - NM</option>
+                                                          <option>New York - NY</option>
+                                                          <option>North Carolina - NC</option>
+                                                          <option>North Dakota - ND</option>
+                                                          <option>Ohio - OH</option>
+                                                          <option>Oklahoma - OK</option>
+                                                          <option>Oregon - OR</option>
+                                                          <option>Pennsylvania - PA</option>
+                                                          <option>Rhode Island - RI</option>
+                                                          <option>South Carolina - SC</option>
+                                                          <option>South Dakota - SD</option>
+                                                          <option>Tennessee - TN</option>
+                                                          <option>Texas - TX</option>
+                                                          <option>Utah - UT</option>
+                                                          <option>Vermont - VT</option>
+                                                          <option>Virginia - VA</option>
+                                                          <option>Washington St. - WA</option>
+                                                          <option>West Virginia - WV</option>
+                                                          <option>Wisconsin - WI</option>
+                                                          <option>Wyoming - WI</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            <label class="label">Zip Code:</label>
+                                            <input class="input" id="provider-zip" type="integer" placeholder="zipcode">
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                  <div class="cell">
+                                    <div class="med-lastEval">
+                                      <label>When was your last medical checkup/evaluation?
+                                          <input class="input" type="date" id="date-lastEval">
+                                      </label>
+                                      </div>
+                                  <label class="label">Are you currently taking any medication?
+                                      <label class="radio">
+                                      <input type="radio" name="cMeds" value="yes" id="cMedsYes">Yes
+                                  </label>
+                                  <label class="radio">
+                                      <input type="radio" name="cMeds" value="no" id="cMedsNo">No
+                                  </label></label>
+                                          
+                                  <textarea class="textarea" cols="42" rows="10" placeholder="pleas list all medications you currently take for which condition" id="current-meds-desc"></textarea>
+                              </div>
+                                  </div>
+                                    
+                        </div>
+                      </div>
+                      <div class="grid">
+                        <div class="cell">
+                            <label class="label">Do you have a family history of the following health-related conditions?</label>
+                                <div class="grid">
+                                  <div class="cell">
+                                    <label class="label">
+                                      Hypertension
+                                      <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                  </label>
+                                  </div>
+                                  <div class="cell">
+                                    <label class="label">
+                                      Cancer
+                                      <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                    </label>
+                                  </div>
+                                  <div class="cell">
+                                    <label class="label">
+                                      Anxiety
+                                      <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                    </label>
+                                  </div>
+                                  <div class="cell">
+                                    <label class="label">
+                                      Obesity
+                                      <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                    </label>
+                                  </div>
+                                  </div>
+                                  <div class="grid">
+                                    <div class="cell">
+                                      <label class="label">
+                                        Attention Deficit / Hyperactivity Disorder (ADHD)
+                                        <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                      </label>
+                                    </div>
+                                    <div class="cell">
+                                      Autism
+                                      <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                    </div>
+                                    <div class="cell">
+                                      Diabetes
+                                      <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                    </div>
+                                    <div class="cell">
+                                      Irritable Bowel Syndrome (IBS)
+                                      <input type="checkbox">Y
+                                      <input type="checkbox">N
+                                    </div>
+                                  </div>
+                                    <div class="grid">
+                                        <div class="cell">
+                                            <label class="radio">
+                                                <input type="radio">Yourself
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio">Family Member
+                                                </label>
+                                                <div class="control">
+                                                    <div class="select">
+                                                        <select>
+                                                            <option>Immediate Family</option>
+                                                            <option>Extended Family</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="container">
+                                                      <div class="grid">
+                                                        <div class="cell" id="immediate-fam" value="immediate-fam" name="family-health-history">
+                                                          <label class="radio">
+                                                            <input type="radio" value="immediate-fam" name="immediate-fam">Mother
+                                                            <input type="radio" name="immediate-fam">Father
+                                                            <input type="radio" name="immediate-fam">Brother
+                                                            <input type="radio" name="immediate-fam">Sister
+                                                          </label>
+                                                        </div>
+                                                        <div class="cell" id="extended-fam" value="extended-family" name="family-health-history">
+                                                          <label class="radio">
+                                                            <input type="radio" name="extended-fam">Great-Grandmother
+                                                            <input type="radio" name="extended-fam">Grandmother
+                                                            <input type="radio" name="extended-fam">Great-Grandfather
+                                                            <input type="radio" name="extended-fam">Grandfather
+                                                            <input type="radio" name="extended-fam">Uncle
+                                                            <input type="radio" name="extended-fam">Aunt
+                                                            <input type="radio" name="extended-fam">Cousin
+                                                          </label>
+                                                        </div>
+                                                        
+
+                                                      </div>
+                                                      <div class="grid">
+                                                        <div class="cell">
+                                                            <div class="field">
+                                                                <label class="label">Name</label>
+                                                                <input class="input" type="text" placeholder="contact name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cell">
+                                                            <div class="field">
+                                                                <label class="label">Relation to Patient</label>
+                                                                <div class="control">
+                                                                    <div class="select">
+                                                                        <select>
+                                                                            <option>Father</option>
+                                                                            <option>Mother</option>
+                                                                            <option>Sibling</option>
+                                                                            <option>Spouse</option>
+                                                                            <option>Guardian</option>
+                                                                        </select>                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="cell">
+                                                                <div class="field">
+                                                                    <label class="label">Relation to Patient</label>
+                                                                    <div class="control">
+                                                                        <label class="radio">
+                                                                            <input type="radio" id="cont-email">Email
+                                                                        </label>
+                                                                        <label class="radio">
+                                                                            <input type="radio" id="cont-phone">Phone Number
+                                                                        </label>
+                                                                        
+                                                                    </div>
+                                                                    <div class="contact-method-email">
+                                                                        <input class="input" type="email" placeholder="contact email">
+                                                                        <small id="emailvalid">Your email must be valid</small>
+                                                                    </div>
+                                                                    <div class="contact-method-phone">
+                                                                        <input class="input" type="mask" placeholder="contact phone number">
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+                                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni animi commodi enim aliquam non, nulla esse ea deleniti, aspernatur labore nam maiores, similique natus cum voluptatibus sint ad! Voluptates ipsa ullam ipsam, molestias aperiam ut earum laudantium corrupti sapiente officiis, provident voluptatum minus, tenetur quasi praesentium est quisquam dolor iste.
+                                                      <div class="review">
+                                                        <label class="checkbox">
+                                                          <input type="checkbox">The following information is truthful and accurate to the best of my knowledge under the penalty of Perjury.
+                                                          </label>
+                                                        <div class="grid">
+                                                          
+                                                          <div class="cell">
+                                                            <label class="label">Full Name
+                                                              <input class="input" type="text" placeholder="full name">
+                                                            </label>
+                                                          </div>
+                                                          <div class="cell">
+                                                            <label class="label">Today's Date
+                                                              <input class="input" type="date" id="review-date">
+                                                            </label>
+                                                          </div>
+                                                          
+                                                        </div>
+                                                        
+                                                          
+                                                          <button class="button is-primary" type="submit">Submit</button>
+                                                      </div>
+                                                      
+                                                    </div>
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                      </div>
+                      </div>
+                     
+            </section>         
+            
+            
+        </form>  
+    </section>
+  </body>
+</html>

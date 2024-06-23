@@ -1,0 +1,85 @@
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 8rem;
+  border-radius: 0.4rem;
+}
+
+hr {
+  background-color: blueviolet;
+  height: 0.2rem;
+}
+
+h1 {
+  background-color: mintcream;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1rem;
+}
+
+#dropdown {
+  padding-left: 1.5rem;
+  padding-right: 10rem;
+}
+
+#suffix,
+#gender {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#martial-status label {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+#medical-form {
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+#background-info {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.med-lastEval {
+  display: none;
+}
+
+.review {
+  margin-top: 2rem;
+}
+
+#review-date {
+  display: block;
+  width: 45%;
+}
+
+#date-lastEval,
+#provider-zip,
+#provider-state {
+  width: 25%;
+}
+
+table {
+  display: flex;
+}
