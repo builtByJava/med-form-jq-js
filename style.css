@@ -65,6 +65,12 @@ form {
   display: none;
 }
 
+.contact-method-email,
+.contact-method-phone,
+#current-meds-desc, .current-provider-info {
+  display: none;
+}
+
 .review {
   margin-top: 2rem;
 }

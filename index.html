@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <title>Med Intake Form</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
@@ -443,19 +443,18 @@
                                                                     <label class="label">Relation to Patient</label>
                                                                     <div class="control">
                                                                         <label class="radio">
-                                                                            <input type="radio" id="cont-email">Email
+                                                                            <input type="radio" name="em-radio-contact-method" value="radio-select-email" id="cont-email">Email
                                                                         </label>
                                                                         <label class="radio">
-                                                                            <input type="radio" id="cont-phone">Phone Number
+                                                                            <input type="radio" name="em-radio-contact-method" value="radio-select-phone" id="cont-phone">Phone Number
                                                                         </label>
                                                                         
                                                                     </div>
                                                                     <div class="contact-method-email">
-                                                                        <input class="input" type="email" placeholder="contact email">
-                                                                        <small id="emailvalid">Your email must be valid</small>
+                                                                        <input class="input" name="em-contact-method" type="email" placeholder="contact email">
                                                                     </div>
                                                                     <div class="contact-method-phone">
-                                                                        <input class="input" type="mask" placeholder="contact phone number">
+                                                                        <input class="input" name="em-contact-method" type="mask" placeholder="contact phone number">
                                                                     </div>
                                                                 </div>
                                                         </div>
